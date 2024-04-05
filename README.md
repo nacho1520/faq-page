@@ -10,4 +10,4 @@ A frequently asked questions page made with HTML, SASS and JavaScript. This is a
 
 
 
-![Screenshot](https://github.com/nacho1520/contact-page/blob/main/public/screen-shot.png)
+![Screenshot](https://github.com/nacho1520/faq-page/blob/main/public/shot.png)
