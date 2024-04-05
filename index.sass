@@ -1,0 +1,124 @@
+*
+    margin: 0
+    padding: 0
+    font-family: "Be Vietnam Pro", sans-serif
+
+body 
+    display: flex
+    justify-content: center
+    background-color: #12111F
+
+main
+    padding-top: 72px
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+.title
+    width: 100%
+    height: 230px
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    img
+        width: 100%
+        height: 100%
+        position: absolute
+        left: 0
+        top: 0
+        z-index: -10
+
+h1
+    width: 70%
+    text-align: center
+    line-height: 150%
+    font-size: 2.25rem
+    font-weight: bold
+    color: rgba(255, 255, 255, 0.3)
+
+.subtitles
+    text-align: center
+    margin-top: 40px
+    margin-bottom: 40px
+    h2
+        font-size: 1.25rem
+        font-weight: 600
+        color: #F2F5F9
+        margin-bottom: 16px
+    p
+        font-size: 1rem
+        color: #CDD5E0
+
+.tabs 
+    width: 90%
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    margin-bottom: 80px
+    gap: 24px
+    .tab
+        background-color: inherit
+        border: none
+        outline: none
+        cursor: pointer
+        font-size: 0.875rem
+        color: #F2F5F9
+        padding: 8px 20px 8px 20px
+        display: flex
+        justify-content: center
+        align-items: center
+        transition: 0.3s
+        &.active
+            background-color: rgba(255, 255, 255, 0.2)
+            border-radius: 50px
+
+.content
+    width: 90%
+    display: none
+    &.active
+        display: block
+    .accordion
+        margin-bottom: 20px
+        position: relative
+        padding: 28px 32px 28px 32px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        cursor: pointer
+        transition: 0.1s
+        p
+            font-size: 1.25rem
+            color: #97A3B6
+        .expand-up
+            display: none
+        .accordion-content
+            display: none
+            width: 100%
+            margin-top: 8px
+            font-size: 1rem
+            color: #CDD5E0
+            line-height: 150%
+        &.active
+            background: rgba(255, 255, 255, 0.1)
+            border-radius: 20px
+            .accordion-content
+                display: block
+            .expand-down
+                display: none
+            .expand-up
+                display: block    
+
+@media (min-width: 1200px)
+    main
+        width: 60%
+    .title
+        width: 80%
+        height: 280px
+        h1
+            width: 50%
+            font-size: 3rem
